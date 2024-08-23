@@ -1,0 +1,27 @@
+<div>
+    {% if claim_filed %}
+        <p>
+            Filed claim!
+        </p>
+    {% endif %}
+    {% if made_payment %}
+        <p>
+            Payment made!
+        </p>
+    {% endif %}
+    <form action="/">
+        <input type="submit" value="Home"/>
+    </form>
+    <form action="/customer/see_remittances">
+        <input type="submit" value="See Remittances"/>
+    </form>
+    <form action="/customer/see_invoices">
+        <input type="submit" value="See Invoices"/>
+    </form>
+    <form action="/customer/file_claim">
+        <input type="submit" value="File Claim"/>
+    </form>
+    <form action="/customer/make_payment">
+        <input type="submit" value="Make Payment"/>
+    </form>
+</div>

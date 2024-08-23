@@ -1,0 +1,36 @@
+<html>
+    <table rel="style">
+        <thead>
+            <tr>
+                <th>
+                    File Date
+                </th>
+                <th></th>
+                <th>
+                    Dollar Amount       
+                </th>
+                <th></th>
+                <th>
+                    Invoice number
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for remittance in invoices %}
+        <tr>
+            <td>
+                {{remittance.File_date}}
+            </td>
+            <td></td>
+            <td>
+                {{remittance.Dollar_amount}}
+            </td>
+            <td></td>
+            <td>
+                {{remittance.Invoice_num}}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</html>

@@ -1,0 +1,10 @@
+<div>
+    {% if not_found %}
+        <p>Ssn not found, please try again</p>
+    {% endif %}
+    <form action = "/customer">
+        <label>Enter Ssn:</label>
+        <input type="text" name="Ssn"/>
+        <input type = "submit" />
+    </form>
+</div>

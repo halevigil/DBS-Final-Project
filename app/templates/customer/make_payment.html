@@ -1,0 +1,10 @@
+<div>
+    {% for var in not_found %}
+        <p>{{var}} not found, please try again</p>
+    {% endfor %}
+    <form action = "/customer/make_payment">
+        <label>Enter Amount of Money:</label><input type="text" name="payment"/>
+        <label>Enter ContractBenefit#:</label><input type="text" name="ContractBenefit_num"/>
+        <input type = "submit" />
+    </form>
+</div>

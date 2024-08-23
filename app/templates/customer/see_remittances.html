@@ -1,0 +1,44 @@
+<div>
+    <table rel="style">
+        <thead>
+            <tr>
+                <th>
+                    Given Date
+                </th>
+                <th></th>
+                <th>
+                    Dollar Amount       
+                </th>
+                <th></th>
+                <th>
+                    Claim number
+                </th>
+                <th></th>
+                <th>
+                    Remittance number
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for remittance in remittances %}
+        <tr>
+            <td>
+                {{remittance.GivenDate}}
+            </td>
+            <td></td>
+            <td>
+                {{remittance.Dollar_amount}}
+            </td>
+            <td></td>
+            <td>
+                {{remittance.Claim_num}}
+            </td>
+            <td></td>
+            <td>
+                {{remittance.Remittance_num}}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

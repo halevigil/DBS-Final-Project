@@ -1,0 +1,20 @@
+<div>
+    <form action="/">
+        <input type="submit" value="Home"/>
+    </form>
+    <form action="/business/see_claims">
+        <input type="submit" value="See Claims"/>
+    </form>
+    <form action="/business/associate_passed">
+        <input type="submit" value="Associate Passed Away"/>
+    </form>
+    <form action="/business/see_premiums">
+        <input type="submit" value="See Premiums"/>
+    </form>
+    <form action="/business/recalculate_premiums">
+        <input type="submit" value="Recalculate Premiums"/>
+    </form>
+    {% if recalculated_premiums %}
+    <p>Recalculated Premiums!</p>
+    {% endif %}
+</div>

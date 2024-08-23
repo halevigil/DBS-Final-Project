@@ -1,0 +1,44 @@
+<html>
+    <table rel="style">
+        <thead>
+            <tr>
+                <th>
+                    ContractBenefit#
+                </th>
+                <th></th>
+                <th>
+                    Beneficiary Ssn       
+                </th>
+                <th></th>
+                <th>
+                    Benefit#
+                </th>
+                <th></th>
+                <th>
+                    Premium
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for e in contractbenefits %}
+        <tr>
+            <td>
+                {{e.ContractBenefit_num}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Beneficiary_ssn}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Benefit_num}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Premium}}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</html>

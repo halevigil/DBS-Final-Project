@@ -1,0 +1,44 @@
+<html>
+    <table rel="style">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th></th>
+                <th>
+                    Id       
+                </th>
+                <th></th>
+                <th>
+                    Address
+                </th>
+                <th></th>
+                <th>
+                    Earnings
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for e in associates %}
+        <tr>
+            <td>
+                {{e.Associate_name}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Id}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Address}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Earnings}}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</html>

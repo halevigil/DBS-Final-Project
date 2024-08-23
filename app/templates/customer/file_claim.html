@@ -1,0 +1,13 @@
+<div>
+    {% for var in not_found %}
+        <p>{{var}} not found, please try again</p>
+    {% endfor %}
+    <form action = "/customer/file_claim">
+        <div>
+        <label>Enter Description:</label><input type="text" name="Description"/>
+        <label>Enter ContractBenefit#:</label><input type="text" name="ContractBenefit_num"/>
+        <label>Enter BillingAccount#:</label><input type="text" name="BillingAccount_num"/>
+        <input type = "submit" />
+        </div>
+    </form>
+</div>

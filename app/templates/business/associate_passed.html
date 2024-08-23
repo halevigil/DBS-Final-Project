@@ -1,0 +1,10 @@
+<div>
+    {% if not_found %}
+        <p>No customers found bequeathed to by that Associate Id</p>
+    {% endif %}
+    <form action = "/business/associate_passed">
+        <label>Enter Associate Id:</label>
+        <input type="text" name="Id"/>
+        <input type = "submit" />
+    </form>
+</div>

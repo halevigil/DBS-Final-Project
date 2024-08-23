@@ -1,0 +1,45 @@
+<html>
+    <table rel="style">
+        <thead>
+            <tr>
+                <th>
+                    File Date
+                </th>
+                <th></th>
+                <th>
+                    Description       
+                </th>
+                <th></th>
+                <th>
+                    Claim number
+                </th>
+                <th></th>
+                <th>
+                    ContractBenefit#
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for e in claims %}
+        <tr>
+            <td>
+                {{e.Claim_date}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Description}}
+            </td>
+            <td></td>
+            <td>
+                {{e.Claim_num}}
+            </td>
+
+            <td></td>
+            <td>
+                {{e.ContractBenefit_num}}
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</html>

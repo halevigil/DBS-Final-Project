@@ -1,0 +1,50 @@
+<div>
+    <p>
+        Associate earnings: {{associate.Earnings}}
+    </p>
+    <div>
+        All customers bequeathed to by this associate:
+        <table rel="style">
+            <thead>
+                <tr>
+                    <th>
+                        Customer Name
+                    </th>
+                    <th></th>
+                    <th>
+                        Ssn       
+                    </th>
+                    <th></th>
+                    <th>
+                        Address
+                    </th>
+                    <th></th>
+                    <th>
+                        Percent
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for e in customers %}
+            <tr>
+                <td>
+                    {{e.CustName}}
+                </td>
+                <td></td>
+                <td>
+                    {{e.Ssn}}
+                </td>
+                <td></td>
+                <td>
+                    {{e.Address}}
+                </td>
+                <td></td>
+                <td>
+                    {{e.Percent}}
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+    </div>
+    </table>
+</div>

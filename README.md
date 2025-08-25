@@ -16,6 +16,5 @@ Here is a non-comprehensive list of business use-cases for these indices:
  
 **Machine learning model:**
 You can find my machine learning models in machine_learning.ipynb. My machine learning models would be deployed to predict each customer’s chance of developing various diseases based on their health date. In the first cell you see an example of the visualization capabilities. It is the result of a regression on age with the probability of developing diseases. As you can see, the older someone is, the likelier they are to have diabetes. 
-<img width="468" height="640" alt="image" src="https://github.com/user-attachments/assets/8f982f6f-8bf3-47fe-b91a-3f7aa45009d2" />
-Each next cell deals with a different dataset, 4 total: diabetes, heart disease, stroke, and alzheimer’s. Each machine learning model learns to predict the probability that a patient has the disease based on their health attributes. They all use logistic regression as the most appropriate tool for this type of prediction
+Each next cell deals with a different dataset, 4 total: diabetes, heart disease, stroke, and alzheimer’s. Each machine learning model learns to predict the probability that a patient has the disease based on their health attributes. They all use logistic regression as the most appropriate tool for this type of prediction.
 Finally, in the last cell there is a function that can take any model, a cost for the disease, and a markup, and calculate the premium that that customer should pay for that disease.

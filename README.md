@@ -4,6 +4,13 @@ This is the final project for my Database Systems course.
 It is a flask app using mysql-alchemy ORM and scikitlearn for a machine learning model. It models a health insurance company, with different users, policies, and health data. 
 The cost for the policies are determined by a user's health data. 
 
+## Description
+# Application
+
+The application is found in the “/app” folder of this submission folder. The application was created using flask. In the app.py file is the function to be run when the user hits each endpoint of the app: “/”,”/customer”,”/customer/see_remittances”, etc. Every time one hits an endpoint, the function does some computations (potentially querying from the database) and then returns a template, which are the html files representing the pages. The templates are stored in the “/app/templates” folder, and except for the index (home page of the app) are further divided into business and customer (will be explained soon). 
+The app connects to the database by the Object Relational Mapper (ORM) Flask-Sqlalchemy and the connector mysql-connector. All the models are stored in the models.py file. Queries are issued using the notation Object.query or db_session.query(Object), with “.filter” corresponding to Select commands and most other commands being named the same way as sql equivalents, although sometimes it can be a bit unclear what SQL query is actually being issued. The database.py file is used to initiate the connection to the database.
+
+
 **Physical Database Design:**
 
 All primary keys become primary indices for their table (ie, the rows are clustered by their primary key value). All foreign keys become secondary indices for their table. In addition, all dates become indices to allow users to more easily select by date. The files are clustered by their primary index and all use the B+ tree data structure since this is the only one supported by the table's storage engine. This is seen in the project_schema folder.

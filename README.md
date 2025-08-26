@@ -4,7 +4,6 @@ This is the final project for my Database Systems course.
 It is a flask app using mysql-alchemy ORM and scikitlearn for a machine learning model. It models a health insurance company, with different users, policies, and health data. 
 The cost for the policies are determined by a user's health data. 
 
-## Description
 # Application
 
 The application is found in the “/app” folder of this submission folder. The application was created using flask. In the app.py file is the function to be run when the user hits each endpoint of the app: “/”,”/customer”,”/customer/see_remittances”, etc. Every time one hits an endpoint, the function does some computations (potentially querying from the database) and then returns a template, which are the html files representing the pages. The templates are stored in the “/app/templates” folder, and except for the index (home page of the app) are further divided into business and customer (will be explained soon). 
